@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../js/lib/web-highlighter.min.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
+	<style>
+		:root {
+			--junction-color:  rgba(255,0,0,0.5);
+			--vector-color:  rgba(0,0,255,0.5);
+		}
+
+		#seq {
+			font-family: Courier;
+			margin: 2em;
+		}
+		button.highlight {
+			font-size: 20pt;
+
+		}
+		button#junction {
+			background: var(--junction-color);
+		}
+		button#vector {
+			background: var(--vector-color);
+		}
+
+		.highlight-mengshou-wrap.junction {
+			background:  var(--junction-color);
+		}
+		.highlight-mengshou-wrap.vector {
+			background:  var(--vector-color);
+		}
+	</style>
+	<body>
+		<button id="junction" class="highlight">Junction</button>
+		<button id="vector" class="highlight">Vector</button>
+		<div id="seq" contenteditable>
+		This is the text
+		</div>
+	</body>
+</html>
